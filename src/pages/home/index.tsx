@@ -136,8 +136,8 @@ class Home extends React.Component {
                             <li>
                                 <img src={windows} alt="Windows" onError={e => fallbackImg(e)} />
                                 <h2>Windows</h2>
-                                <h3><a href="https://github.com/sumoprojects/SumoGUIWallet/releases/download/v0.4.0/SumoGUIWallet-v0.4.0-w64install.exe">64-bit installer</a></h3>
-                                <h3><a href="hhttps://github.com/sumoprojects/SumoGUIWallet/releases/download/v0.4.0/SumoGUIWallet-v0.4.0-Win64.7z">64-bit zip</a></h3>
+                                <h3><a href="https://github.com/sumoprojects/SumoGUIWallet/releases/download/v0.4.0/SumoGUIWallet-v0.4.0-w64install.exe">64-bit Installer</a></h3>
+                                <h3><a href="hhttps://github.com/sumoprojects/SumoGUIWallet/releases/download/v0.4.0/SumoGUIWallet-v0.4.0-Win64.7z">64-bit Zip</a></h3>
                             </li>
                             <li>
                                 <img src={macos} alt="MacOS" onError={e => fallbackImg(e)} />
@@ -147,7 +147,7 @@ class Home extends React.Component {
                             <li>
                                 <img src={linux} alt="Linux" onError={e => fallbackImg(e)} />
                                 <h2>Linux</h2>
-                                <h3><a href="https://github.com/sumoprojects/SumoGUIWallet/releases/download/v0.4.0/SumoGUIWallet-v0.4.0-Linux-x64.tar.xz">Ubuntu 18.04 (64-bit)</a></h3>
+                                <h3><a href="https://github.com/sumoprojects/SumoGUIWallet/releases/download/v0.4.0/SumoGUIWallet-v0.4.0-Linux-x64.tar.xz">64-bit (Ubuntu 18.04)</a></h3>
                             </li>
                         </ul>
                     </div>
@@ -171,7 +171,10 @@ class Home extends React.Component {
                             <li>
                                 <img src={linux} alt="Linux" onError={e => fallbackImg(e)} />
                                 <h2>Linux</h2>
-                                <h3><a href="https://github.com/sumoprojects/sumokoin/releases/download/v0.8.1.0/sumokoin.linux.x64.v0-8-1-0.tar.xz">64-bit</a></h3>
+                                <h3><a href="https://github.com/sumoprojects/sumokoin/releases/download/v0.8.1.0/sumokoin.linux.x64.v0-8-1-0.tar.xz">64-bit (x86)</a></h3>
+								<h3><a href="https://github.com/sumoprojects/sumokoin/releases/download/v0.8.1.0/sumokoin.linux.armv8.v0-8-1-0.tar.xz">64-bit (ARM 8)</a></h3>
+								<h3><a href="https://github.com/sumoprojects/sumokoin/releases/download/v0.8.1.0/sumokoin.linux.riscv64.v0-8-1-0.tar.xz">64-bit (RISC)</a></h3>
+								<h3><a href="https://github.com/sumoprojects/sumokoin/releases/download/v0.8.1.0/sumokoin.freebsd.x64.v0-8-1-0.tar.xz">64-bit (FreeBSD)</a></h3>
 							</li>
                         </ul>
                     </div>
