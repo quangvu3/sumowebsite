@@ -12,7 +12,8 @@ import {
     faTelegram,
     faSlack,
     faFacebook,
-    faTwitter
+    faTwitter,
+    faDiscord
 } from '@fortawesome/free-brands-svg-icons';
 import {customScroll} from '../../utils';
 
@@ -25,21 +26,17 @@ const Footer: React.SFC<{}> = () => (
                         <img src={footerLogo} className="logo" alt="Sumokoin" onError={e =>  fallbackImg(e)} />
                     </Link>
                 </div>
-                <div className="col-md-3 col-sm-6 col-xs-12">
-                    <ul>
-                        <li className="title">{transl('footer.blog.title')}</li>
-                        <li><a target="_blank" href="https://medium.com/sumokoin">{transl('footer.blog.one')}</a></li>
-                    </ul>
+                <div className="col-md-3 col-sm-6 col-xs-12">                
                     <ul>
                         <li className="title">{transl('footer.contacts')}</li>
                         <li><a target="_blank" href="mailto:support@sumokoin.org">support@sumokoin.org</a></li>
-                    </ul>
+                    </ul>                   
                 </div>
                 <div className="col-md-3 col-sm-6 col-xs-12">
-                    <ul>
+                     <ul>
                         <li className="title">{transl('footer.tools.title')}</li>
-                        <li><a target="_blank" href="https://explorer.sumokoin.com/">{transl('footer.tools.block')}</a></li>
-                        <li><a target="_blank" href="https://wallet.sumokoin.com/">{transl('footer.tools.wallet')}</a></li>
+                        <li><a target="_blank" href="https://explorer.sumokoin.com/">{transl('footer.tools.block1')}</a></li>
+                        <li><a target="_blank" href="https://sumoexplorer.com/">{transl('footer.tools.block2')}</a></li>
                     </ul>
                     <ul>
                         <li className="title">{transl('footer.mining.title')}</li>
@@ -52,10 +49,11 @@ const Footer: React.SFC<{}> = () => (
                         <li className="title">Social</li>
                         <li>
                             <a target="_blank" href="https://github.com/sumoprojects/sumokoin"><FontAwesomeIcon icon={faGithub} /></a>
-                            <a target="_blank" href="https://t.me/joinchat/F8RH2kPmFCnA-igHBKSCAA"><FontAwesomeIcon icon={faTelegram} /></a>
+                            <a target="_blank" href="https://t.me/sumokoin"><FontAwesomeIcon icon={faTelegram} /></a>
                             <a target="_blank" href="https://sumokoin.slack.com/"><FontAwesomeIcon icon={faSlack} /></a>
                             <a target="_blank" href="https://www.facebook.com/sumokoin/"><FontAwesomeIcon icon={faFacebook} /></a>
                             <a target="_blank" href="https://twitter.com/Sumokoin"><FontAwesomeIcon icon={faTwitter} /></a>
+			    <a target="_blank" href="https://discord.gg/heDXTvP"><FontAwesomeIcon icon={faDiscord} /></a>
                         </li>
                     </ul>
                 </div>
