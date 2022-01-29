@@ -28,17 +28,9 @@ import linux from 'images/linux.png';
 import twelveth from 'images/twelveth.png';
 import android from 'images/android.png';
 
-import exrates from 'images/exchanges/exrates.png';
 import indodax from 'images/exchanges/indodax.png';
 import tradeogre from 'images/exchanges/tradeogre.png';
-import livecoin from 'images/exchanges/livecoin.png';
-import bitalong from 'images/exchanges/bitalong.png';
-import txbit from 'images/exchanges/txbit.png';
-import qbtc from 'images/exchanges/qbtc.png';
-import bilaxy from 'images/exchanges/bilaxy.png';
-import citex from 'images/exchanges/citex.png';
 import coinex from 'images/exchanges/coinex.png';
-import gjcom from 'images/exchanges/gjcom.png';
 import hotbit from 'images/exchanges/hotbit.png';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -111,31 +103,7 @@ class Home extends React.Component {
                                 <a target="_blank" href="https://tradeogre.com/exchange/BTC-sumo"><img src={tradeogre} onError={e => fallbackImg(e)} /></a>
                             </li>
                             <li>
-                                <a target="_blank" href="https://www.qbtc.com/"><img src={qbtc} onError={e => fallbackImg(e)} /></a>
-                            </li>
-                            <li>
-                                <a target="_blank" href="https://www.livecoin.net"><img src={livecoin} onError={e => fallbackImg(e)} /></a>
-                            </li>
-                            <li>
-                                <a target="_blank" href="https://www.bitalong.com/trade/index/market/sumo_btc/"><img src={bitalong} onError={e => fallbackImg(e)} /></a>
-                            </li>
-			    <li>
-                                <a target="_blank" href="https://txbit.io/"><img src={txbit} onError={e => fallbackImg(e)} /></a>
-                            </li>
-                            <li>
-                                <a target="_blank" href="https://exrates.me/dashboard"><img src={exrates} onError={e => fallbackImg(e)} /></a>
-                            </li>
-                            <li>
-                                <a target="_blank" href="https://bilaxy.com/"><img src={bilaxy} onError={e => fallbackImg(e)} /></a>
-                            </li>
-                            <li>
-                                <a target="_blank" href="https://www.citex.co.kr/"><img src={citex} onError={e => fallbackImg(e)} /></a>
-                            </li>
-                            <li>
                                 <a target="_blank" href="https://www.coinex.com/"><img src={coinex} onError={e => fallbackImg(e)} /></a>
-                            </li>
-                            <li>
-                                <a target="_blank" href="https://www.gj.com/home/"><img src={gjcom} onError={e => fallbackImg(e)} /></a>
                             </li>
                             <li>
                                 <a target="_blank" href="https://www.hotbit.io/exchange/"><img src={hotbit} onError={e => fallbackImg(e)} /></a>
@@ -191,7 +159,7 @@ class Home extends React.Component {
                     </div>
                     <div className="col-sm-6 col-xs-12">
                         <h1>{transl('twelveth.one')}</h1>
-                        <a target="_blank" href="https://sumokoin.org/downloads/Sumokoin%20Android%20Wallet-SamuraiII_universal.apk"><img src={android} onError={e => fallbackImg(e)} /></a><br/><br/>
+                        <a target="_blank" href="https://download.sumokoin.org/Sumokoin-Android-Wallet-SamuraiII_universal.apk"><img src={android} onError={e => fallbackImg(e)} /></a><br/><br/>
                         <small>Version v2.1.0 "Samurai"</small>   
 			<small> - Published on 19/01/2021</small>                    
                     </div>
