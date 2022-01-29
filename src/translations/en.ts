@@ -7,10 +7,9 @@ export default {
     },
     header: {
         one: 'Features',
-        two: 'Wallet',
+        two: 'Wallets',
         three: 'Whitepaper',
         four: 'Development Path',
-        five: 'Faucet',
         six: 'Exchanges'
     },
     first: {
@@ -29,7 +28,7 @@ export default {
         three: 'high level of privacy',
         four: 'in mind, setting Ring',
         five: 'Confidential Transactions',
-        six: '(RingCT) with minimum ringsize (mixin) of 12 to conceal sources/amounts transferred and make it high resistance to blockchain analysis'
+        six: '(RingCT) with minimum ringsize of 49 (48 mixings) to conceal sources/amounts transferred and make it high resistance to blockchain analysis'
     },
     fourth: {
         one: 'Untraceable',
@@ -51,16 +50,7 @@ export default {
     },
     exchanges: {
         one: 'Exchanges',
-        two: 'Sumokoin is listed on various exchanges, independent platforms where you can trade (buy and sell) your coins. Depending on the exchange, there is a wide variety of trading pairs, both with other cryptocurrencies (BTC, ETH, LTC, DOGE, etc) and with various fiat currencies (USD, EUR). This list is susceptible to evolve as Sumokoin gets progressively added to more exchanges.',
-        cryptopia: 'Cryptopia',
-        exrates: 'Exrates',
-        indodax: 'Indodax',
-        maple: 'Maple',
-        next: 'Next',
-        nusax: 'Nusax',
-        livecoin: 'Livecoin',
-        bitalong: 'Bitalong',
-        tradeogre: 'Tradeogre'
+        two: 'Sumokoin is listed on various exchanges, independent platforms where you can trade (buy and sell) your coins. Depending on the exchange, there is a wide variety of trading pairs, both with other cryptocurrencies (BTC, ETH, LTC, DOGE, etc) and with various fiat currencies (USD, EUR). This list is susceptible to evolve as Sumokoin gets progressively added to more exchanges.'
     },
     seventh: {
         one: 'GUI Wallet',
@@ -84,80 +74,89 @@ export default {
         three: 'roadmap',
         four: 'suggested by developers but can be changed to reflect (new) project targets and dev vision. Implementation timelines are not fixed and subjected to actual development resources.'
     },
+    eleventh: {
+        one: 'OFFICIAL WEB WALLET',
+        two: 'Web wallet link (Global)',
+        three: 'Web wallet link (mainland China access)'
+    },
+    twelveth: {
+        one: 'OFFICIAL ANDROID WALLET',
+        two: 'Android wallet download Github link',
+    },
+
     timeline: {
         first: {
-            date: 'Q1 - March',
-            version: 'Bulletproof',
-            desc: 'Bulletproof implementation'
+            date: 'APRIL 2017',
+            version: 'SUMOKOIN LAUNCH',
+            desc: 'Sumokoin first release. Blockchain genesis'
         },
         second: {
-            date: 'Q1 - March',
-            version: 'New PoW Algorithm',
-            desc: 'Sumokoin will change its PoW algorithm and become ASIC resistant'
+            date: 'JULY 2017',
+            version: 'Sumokoin GUI wallet',
+            desc: 'Easy to use, full featured GUI Wallet, created in python'
         },
         third: {
-            date: 'Q2 - April/May',
-            version: 'Web Wallet',
-            desc: 'A Web based wallet will be developed'
+            date: 'DECEMBER 2017',
+            version: 'Subaddresses support',
+            desc: 'Subaddress support for greater privacy/GUI wallet version released, supporting subaddresses (ghost addresses)'
         },
         fourth: {
-            date: 'Q2 - April/May',
-            version: 'New GUI Miner',
-            desc: 'New GUI Miner compatible with the new PoW algorithm we will use'
+            date: 'APRIL 2018',
+            version: 'Daemon/Wallet SSL support',
+            desc: 'Add SSL support for deamon/wallet connection'
         },
         fifth: {
-            date: 'Q2 - May/June',
-            version: 'New GUI Wallet',
-            desc: 'The Wallet will be coded in pure C++, revmap in both UI and functionality (GUI and LITE will be in one UI).'
+            date: 'JUNE 2018',
+            version: 'New robust difficulty algorithm',
+            desc: 'Update of the difficulty algorithm to fence off 51%-timestamp manipulation attacks.'
         },
         sixth: {
-            date: 'End 2018',
-            version: 'Online wallet + Bulletproof',
-            desc: 'Web/online wallet, Bulletproof implementation and Micro-payment channel feasibility study'
+            date: 'SEPTEMBER 2018',
+            version: 'Multisignature wallet',
+            desc: 'Implement support for multisignature/shared transactions'
         },
         seventh: {
-            date: 'End 2018',
-            version: 'Mobile wallets (Android, iOS)',
-            desc: 'Mobile wallets for Android & iOS devices and  Micro-payment channel implementation'
-        }
-    },
-    faucet: {
-        login: {
-            title: 'Faucet',
-            placeholder: 'Insert here your Sumokoin Wallet Address',
-            button: 'Continue',
-            one: 'What is the Faucet?',
-            two: 'In the Faucet you can earn Sumokoins by lending 50% of your CPU Power (like a web miner).',
-            three: 'How do I start to earn free Sumo?',
-            four: 'You just have to put your SumoKoin Address in the form above, and stay active on the next page.',
-            five: 'In how much time I get paid?',
-            six: 'We usually send payments to everyone every 4 hours when a minimum of 0.002 Sumo has been reached.',
-            seven: 'Where can I see statistics about how much I earned?',
-            eight: 'You have to insert your Address above and Statistics will appear.',
-            loading: 'Loading...'
+            date: 'APRIL 2019',
+            version: 'Enabling of bulletproos(v2) + Increasing Ringsize to 49',
+            desc: 'Enabling of bulletproos(v2) that provide much smaller txs size at the same ringsize + Increasing the Ringsize to 49 for absolute resistance against privacy breaking tx traceability analysis attacks'
         },
-        dashboard: {
-            title: 'Dashboard',
-            one: 'Everything works fine!',
-            two: `There aren't problems, everything works fine and the SUMO will be sent to the following wallet address:`,
-            balance: 'Balance',
-            payout: 'Minimum for payout',
-            loading: 'Loading...',
-            executed: 'Executed',
-            notExecuted: 'Not Executed',
-            getPayed: 'Withdraw your SUMO',
-            withdraw: 'Withdraw',
-            success: 'Successfully withdrawn SUMO',
-            error: 'Error withdrawn SUMO',
-            logout: 'Logout'
+        eighth: {
+            date: 'JUNE 2019',
+            version: 'Blockchain Pruning + Multisig Messaging System + TOR&I2P cli intergration',
+            desc: 'Introducing blockchain pruning feature that decreases the size of the blockchain more than 1/3 of its original size + Multisig Messaging System that simplifies the creation of multisig txs between remote users as well as providing easy of use, absolute privacy and security on crucial info exchanged (like key sets) + TOR&I2P cli intergration '
         },
-        loading: 'Loading...'
+        ninth: {
+            date: 'NOVEMBER 2019',
+            version: 'Daemon RPC credit system + support syncing with pruned nodes + improve DDOS protection',
+            desc: 'Users running an open node for remote wallet connections can now ask for credits for their services translated in mining hashes to their daemons  + daemons, pruned or not, can now optionally sync off pruned daemons + multiple DDOS protective measures to protect network and nodes stability'
+        },
+        tenth: {
+            date: 'JANUARY 2020',
+            version: 'Sumokoin Web Wallet',
+            desc: 'Innovative, full featured, easy to use, private and secure Sumokoin Online Web Wallet'
+        },
+       eleventh: {
+            date: 'FEBRUARY 2020',
+            version: 'Sumokoin Android App Wallet',
+            desc: 'Secure and private Sumokoin Android App Wallet'
+        },
+       twelveth: {
+            date: 'JANUARY 2021',
+            version: 'Compact Linkable Spontaneous Anonymous Group Signatures - CLSAGs',
+            desc: 'New signature scheme decreasing transaction size by more than 25% - improve tx creation performance'
+        },
+       thirteenth: {
+            date: 'FIRST QUARTER OF 2021',
+            version: 'WSUMO feature',
+            desc: 'Upcoming feature that will merge the best parts of two crypto worlds'
+        },
+
     },
     footer: {
         tools: {
             title: 'Tools',
-            block: 'Block Explorer',
-            wallet: 'Wallet Address Generator'
+            block1: 'Blockchain Explorer 1',
+            block2: 'Blockchain Explorer 2',
         },
         blog: {
             title: 'Blog',

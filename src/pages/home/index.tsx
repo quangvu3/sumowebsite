@@ -20,18 +20,18 @@ import fifth from 'images/fifth.png';
 import sixth from 'images/sixth.png';
 import seventh from 'images/seventh.png';
 import eighth from 'images/eighth.png';
+import eleventh from 'images/eleventh.png';
 import tenth from 'images/tenth.png';
 import windows from 'images/windows.png';
 import macos from 'images/macos.png';
 import linux from 'images/linux.png';
+import twelveth from 'images/twelveth.png';
+import android from 'images/android.png';
 
-import exrates from 'images/exchanges/exrates.png';
 import indodax from 'images/exchanges/indodax.png';
-import next from 'images/exchanges/next.png';
 import tradeogre from 'images/exchanges/tradeogre.png';
-import livecoin from 'images/exchanges/livecoin.png';
-import nusax from 'images/exchanges/nusax.png';
-import bitalong from 'images/exchanges/bitalong.png';
+import coinex from 'images/exchanges/coinex.png';
+import hotbit from 'images/exchanges/hotbit.png';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCheck } from '@fortawesome/free-solid-svg-icons';
@@ -97,25 +97,16 @@ class Home extends React.Component {
                     <div className="col-sm-6 col-xs-12">
                         <ul>
                             <li>
-                                <a target="_blank" href="https://indodax.com/market/SUMOBTC"><img src={indodax} alt={transl('exchanges.indodax')} onError={e => fallbackImg(e)} /></a>
+                                <a target="_blank" href="https://indodax.com/market/SUMOBTC"><img src={indodax} onError={e => fallbackImg(e)} /></a>
                             </li>
                             <li>
-                                <a target="_blank" href="https://tradeogre.com/exchange/BTC-sumo"><img src={tradeogre} alt={transl('exchanges.tradeogre')} onError={e => fallbackImg(e)} /></a>
+                                <a target="_blank" href="https://tradeogre.com/exchange/BTC-sumo"><img src={tradeogre} onError={e => fallbackImg(e)} /></a>
                             </li>
                             <li>
-                                <a target="_blank" href="https://exrates.me/dashboard"><img src={exrates} alt={transl('exchanges.exrates')} onError={e => fallbackImg(e)} /></a>
+                                <a target="_blank" href="https://www.coinex.com/"><img src={coinex} onError={e => fallbackImg(e)} /></a>
                             </li>
                             <li>
-                                <a target="_blank" href="https://next.exchange/"><img src={next} alt={transl('exchanges.next')} onError={e => fallbackImg(e)} /></a>
-                            </li>
-                            <li>
-                                <a target="_blank" href="https://www.livecoin.net"><img src={livecoin} alt={transl('exchanges.livecoin')} onError={e => fallbackImg(e)} /></a>
-                            </li>
-                            <li>
-                                <a target="_blank" href="https://nusax.co.id/"><img src={nusax} alt={transl('exchanges.nusax')} onError={e => fallbackImg(e)} /></a>
-                            </li>
-                            <li>
-                                <a target="_blank" href="https://bitalong.com/trade/index/market/sumo_btc/"><img src={bitalong} alt={transl('exchanges.bitalong')} onError={e => fallbackImg(e)} /></a>
+                                <a target="_blank" href="https://www.hotbit.io/exchange/"><img src={hotbit} onError={e => fallbackImg(e)} /></a>
                             </li>
                         </ul>
                     </div>
@@ -131,13 +122,13 @@ class Home extends React.Component {
                     <div className="col-sm-6 col-xs-12">
                         <h1>{transl('seventh.one')}</h1>
                         <h2 className="under">{transl('seventh.two')} v0.4.0</h2>
-                        <small>Published on Jan 12, 2021</small>
+                        <small>Published on 12/01/2020</small>
                         <ul>
                             <li>
                                 <img src={windows} alt="Windows" onError={e => fallbackImg(e)} />
                                 <h2>Windows</h2>
                                 <h3><a href="https://github.com/sumoprojects/SumoGUIWallet/releases/download/v0.4.0/SumoGUIWallet-v0.4.0-w64install.exe">64-bit Installer</a></h3>
-                                <h3><a href="hhttps://github.com/sumoprojects/SumoGUIWallet/releases/download/v0.4.0/SumoGUIWallet-v0.4.0-Win64.7z">64-bit Zip</a></h3>
+                                <h3><a href="https://github.com/sumoprojects/SumoGUIWallet/releases/download/v0.4.0/SumoGUIWallet-v0.4.0-Win64.7z">64-bit zip</a></h3>
                             </li>
                             <li>
                                 <img src={macos} alt="MacOS" onError={e => fallbackImg(e)} />
@@ -147,9 +138,30 @@ class Home extends React.Component {
                             <li>
                                 <img src={linux} alt="Linux" onError={e => fallbackImg(e)} />
                                 <h2>Linux</h2>
-                                <h3><a href="https://github.com/sumoprojects/SumoGUIWallet/releases/download/v0.4.0/SumoGUIWallet-v0.4.0-Linux-x64.tar.xz">64-bit (Ubuntu 18.04)</a></h3>
+                                <h3><a href="https://github.com/sumoprojects/SumoGUIWallet/releases/download/v0.4.0/SumoGUIWallet-v0.4.0-Linux-x64.tar.xz">64-bit</a></h3>
                             </li>
                         </ul>
+                    </div>
+                </PageContainer>
+                <PageContainer className="eleventh" big>
+                    <div className="col-sm-6 col-xs-12 first-xs img-right">
+                        <img src={eleventh} onError={e => fallbackImg(e)} />
+                    </div>
+                    <div className="col-sm-6 col-xs-12">
+                        <h1>{transl('eleventh.one')}</h1>
+                        <h2 className="under"><a href="https://wallet.sumokoin.com/">{transl('eleventh.two')}</a></h2>
+                        <small>Published on 04/01/2020</small>                    
+                    </div>
+                </PageContainer>
+                <PageContainer className="twelveth" big>
+                    <div className="col-sm-6 col-xs-12">
+                        <img src={twelveth} onError={e => fallbackImg(e)} />
+                    </div>
+                    <div className="col-sm-6 col-xs-12">
+                        <h1>{transl('twelveth.one')}</h1>
+                        <a target="_blank" href="https://download.sumokoin.org/Sumokoin-Android-Wallet-SamuraiII_universal.apk"><img src={android} onError={e => fallbackImg(e)} /></a><br/><br/>
+                        <small>Version v2.1.0 "Samurai"</small>   
+			<small> - Published on 19/01/2021</small>                    
                     </div>
                 </PageContainer>
                 <PageContainer className="eighth" big>
@@ -185,7 +197,6 @@ class Home extends React.Component {
                 <PageContainer className="ninth" id="whitepaper" center>
                     <div className="col-xs-12">
                         <h1>{transl('ninth.one')}</h1>
-                        <h2>{transl('ninth.two')}</h2>
                     </div>
                     <div className="col-sm-3 col-xs-12">
                         <a href="https://cryptonote.org/whitepaper.pdf"> <FontAwesomeIcon icon={faCheck} className="check" />
@@ -200,7 +211,7 @@ class Home extends React.Component {
                             <h3>{transl('ninth.five')}</h3> </a>
                     </div>
                     <div className="col-sm-3 col-xs-12">
-                        <a href="https://lab.getmonero.org/"> <FontAwesomeIcon icon={faCheck} className="check" />
+                        <a href="https://web.getmonero.org/resources/research-lab/"> <FontAwesomeIcon icon={faCheck} className="check" />
                             <h3>{transl('ninth.six')}</h3> </a>
                     </div>
                 </PageContainer>
@@ -239,6 +250,46 @@ class Home extends React.Component {
                             <h3>{transl('timeline.fifth.date')}</h3>
                             <h4>{transl('timeline.fifth.version')}</h4>
                             <p>{transl('timeline.fifth.desc')}</p>
+                        </VerticalTimelineElement>
+                        <VerticalTimelineElement>
+                            <h3>{transl('timeline.sixth.date')}</h3>
+                            <h4>{transl('timeline.sixth.version')}</h4>
+                            <p>{transl('timeline.sixth.desc')}</p>
+                        </VerticalTimelineElement>
+                        <VerticalTimelineElement>
+                            <h3>{transl('timeline.seventh.date')}</h3>
+                            <h4>{transl('timeline.seventh.version')}</h4>
+                            <p>{transl('timeline.seventh.desc')}</p>
+                        </VerticalTimelineElement>
+                        <VerticalTimelineElement>
+                            <h3>{transl('timeline.eighth.date')}</h3>
+                            <h4>{transl('timeline.eighth.version')}</h4>
+                            <p>{transl('timeline.eighth.desc')}</p>
+                        </VerticalTimelineElement>
+                        <VerticalTimelineElement>
+                            <h3>{transl('timeline.ninth.date')}</h3>
+                            <h4>{transl('timeline.ninth.version')}</h4>
+                            <p>{transl('timeline.ninth.desc')}</p>
+                        </VerticalTimelineElement>
+                        <VerticalTimelineElement>
+                            <h3>{transl('timeline.tenth.date')}</h3>
+                            <h4>{transl('timeline.tenth.version')}</h4>
+                            <p>{transl('timeline.tenth.desc')}</p>
+                        </VerticalTimelineElement>
+                        <VerticalTimelineElement>
+                            <h3>{transl('timeline.eleventh.date')}</h3>
+                            <h4>{transl('timeline.eleventh.version')}</h4>
+                            <p>{transl('timeline.eleventh.desc')}</p>
+                        </VerticalTimelineElement>
+                        <VerticalTimelineElement>
+                            <h3>{transl('timeline.twelveth.date')}</h3>
+                            <h4>{transl('timeline.twelveth.version')}</h4>
+                            <p>{transl('timeline.twelveth.desc')}</p>
+                        </VerticalTimelineElement>
+                        <VerticalTimelineElement>
+                            <h3>{transl('timeline.thirteenth.date')}</h3>
+                            <h4>{transl('timeline.thirteenth.version')}</h4>
+                            <p>{transl('timeline.thirteenth.desc')}</p>
                         </VerticalTimelineElement>
                     </VerticalTimeline>
                 </PageContainer>
