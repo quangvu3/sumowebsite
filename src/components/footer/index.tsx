@@ -26,21 +26,19 @@ const Footer: React.SFC<{}> = () => (
                         <img src={footerLogo} className="logo" alt="Sumokoin" onError={e =>  fallbackImg(e)} />
                     </Link>
                 </div>
-                <div className="col-md-3 col-sm-6 col-xs-12">                
+                <div className="col-md-3 col-sm-6 col-xs-12">
                     <ul>
                         <li className="title">{transl('footer.contacts')}</li>
                         <li><a target="_blank" href="mailto:support@sumokoin.org">support@sumokoin.org</a></li>
-                    </ul>                   
+                    </ul>
                 </div>
                 <div className="col-md-3 col-sm-6 col-xs-12">
                      <ul>
                         <li className="title">{transl('footer.tools.title')}</li>
                         <li><a target="_blank" href="https://explorer.sumokoin.com/">{transl('footer.tools.block1')}</a></li>
-                        <li><a target="_blank" href="https://sumoexplorer.com/">{transl('footer.tools.block2')}</a></li>
                     </ul>
                     <ul>
                         <li className="title">{transl('footer.mining.title')}</li>
-                        <li><a target="_blank" href="https://pool.sumokoin.com/">{transl('footer.mining.one')}</a></li>
                         <li><a target="_blank" href="https://miningpoolstats.stream/sumokoin">{transl('footer.mining.two')}</a></li>
                     </ul>
                 </div>
