@@ -155,7 +155,7 @@ export default {
     footer: {
         tools: {
             title: 'Tools',
-            block1: 'Blockchain Explorer 1',
+            block1: 'Blockchain Explorer',
             block2: 'Blockchain Explorer 2',
         },
         blog: {
